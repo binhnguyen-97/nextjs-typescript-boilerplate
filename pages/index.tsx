@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import { styled } from 'linaria/react'
+import Head from 'next/head';
+import { styled } from 'linaria/react';
 
 const Box = styled.div`
   margin-top: 40px;
@@ -8,6 +8,7 @@ const Box = styled.div`
   width: 200px;
   background-color: tomato;
   animation: spin 2s linear infinite;
+  color: #000;
 
   @keyframes spin {
     from {
@@ -18,7 +19,7 @@ const Box = styled.div`
       transform: rotate(360deg);
     }
   }
-`
+`;
 
 export default function Home(): JSX.Element {
   return (
@@ -28,5 +29,5 @@ export default function Home(): JSX.Element {
       </Head>
       <Box>Zero runtime CSS in JS</Box>
     </>
-  )
+  );
 }
