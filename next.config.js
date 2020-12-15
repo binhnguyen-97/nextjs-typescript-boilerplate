@@ -1,5 +1,5 @@
-const withCSS = require('@zeit/next-css')
-const path = require('path')
+const withCSS = require('@zeit/next-css');
+const path = require('path');
 
 module.exports = withCSS({
   webpack(config, _) {
@@ -14,8 +14,8 @@ module.exports = withCSS({
           },
         },
       ],
-    })
+    });
 
-    return config
+    return config;
   },
-})
+});

@@ -4,12 +4,12 @@ import Document, {
   Main,
   NextScript,
   DocumentContext,
-} from 'next/document'
+} from 'next/document';
 
 class CustomDocument extends Document {
   static async getInitialProps(ctx: DocumentContext): Promise<any> {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
   }
 
   render(): JSX.Element {
@@ -21,8 +21,8 @@ class CustomDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default CustomDocument
+export default CustomDocument;
